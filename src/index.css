@@ -1,3 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +17,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.winning.X {
+  animation: blink 1s infinite;
+  border: 2px solid #ff5722; 
 }
+
+.winning.O {
+  border: 2px solid #2196f3;
+  animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+  50% {
+    border: 2px solid #ffffff; 
+  }
+}
+
+
+
+
+
+
+
+
+
+/*  big circle */
+.circle {
+  animation: circle2Animate 7s infinite;
+  box-shadow: 0 0 50px #5648d8;
+  background: linear-gradient(-25deg, #5648d8, #8641f4);
+}
+
+
+@keyframes circle2Animate {
+  50% {
+     
+  }
+}
+
+
+
+/* for pc laptop */
+@media (min-width: 640px) {
+  @keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 26%;
+    }
+  }
+}
+
+
+
+
