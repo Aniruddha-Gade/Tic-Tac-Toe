@@ -2,6 +2,7 @@
 
 Demo Link --> https://aniruddha-gade.github.io/Tic-Tac-Toe/
 
+ # 📸 Screenshot
 ![Alt Text](https://raw.githubusercontent.com/aniruddha-gade/Tic-Tac-Toe/main/public/App%20Image.png)
 
 
